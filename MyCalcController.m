@@ -18,11 +18,16 @@
 	
 }
 
--(IBAction)RegisterCurrentOperation:(id)sender {
+- (IBAction) RegisterCurrentOperation: (id) sender {
+	NSButton* b = (NSButton*)sender;
+	NSString* operatorText = [b title]; 
 	
+	[processor setOperationValue:operatorText];
+	
+	[operatorField setStringValue:(NSString*)operatorText];	
 }
 
--(IBAction)ModifyCurrentWorkingValue:(id)sender {
+- (IBAction) ModifyCurrentWorkingValue: (id) sender {
 	NSButton* b = (NSButton*)sender;
 	NSString* newChar = [b title]; 
 	float workingValue = [processor modifierValue];

@@ -11,6 +11,7 @@
 
 @interface MyCalcController : NSObject {
 	IBOutlet NSTextField *displayField;
+	IBOutlet NSTextField *operatorField;
 	
 	MathProcessor *processor;
 }

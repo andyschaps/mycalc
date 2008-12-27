@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		532C7FEC0ECBC908001B7771 /* MathProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 532C7FEB0ECBC908001B7771 /* MathProcessor.m */; };
-		538D48CB0EECCE0000906C87 /* Regis.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 538D48CA0EECCE0000906C87 /* Regis.rtf */; };
 		5396511A0ED9DA0100F75182 /* MyCalcController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539651190ED9DA0100F75182 /* MyCalcController.m */; };
 		53F1B5490EC90510007B8294 /* MainCalcWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F1B5480EC90510007B8294 /* MainCalcWindow.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -26,7 +25,6 @@
 		32CA4F630368D1EE00C91783 /* MyCalc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalc_Prefix.pch; sourceTree = "<group>"; };
 		532C7FEA0ECBC908001B7771 /* MathProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProcessor.h; sourceTree = "<group>"; };
 		532C7FEB0ECBC908001B7771 /* MathProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProcessor.m; sourceTree = "<group>"; };
-		538D48CA0EECCE0000906C87 /* Regis.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Regis.rtf; sourceTree = "<group>"; };
 		539651180ED9DA0100F75182 /* MyCalcController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalcController.h; sourceTree = "<group>"; };
 		539651190ED9DA0100F75182 /* MyCalcController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalcController.m; sourceTree = "<group>"; };
 		53F1B5480EC90510007B8294 /* MainCalcWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCalcWindow.xib; sourceTree = "<group>"; };
@@ -49,7 +47,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				538D48CA0EECCE0000906C87 /* Regis.rtf */,
 				539651180ED9DA0100F75182 /* MyCalcController.h */,
 				539651190ED9DA0100F75182 /* MyCalcController.m */,
 				532C7FEA0ECBC908001B7771 /* MathProcessor.h */,
@@ -169,7 +166,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				53F1B5490EC90510007B8294 /* MainCalcWindow.xib in Resources */,
-				538D48CB0EECCE0000906C87 /* Regis.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

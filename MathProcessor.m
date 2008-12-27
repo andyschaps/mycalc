@@ -10,6 +10,7 @@
 
 @implementation MathProcessor
 @synthesize currentTotal, modifierValue;
+@synthesize operationValue;
 
 - (float)applyOperation {
 	self.currentTotal = self.currentTotal + self.modifierValue;

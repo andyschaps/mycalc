@@ -12,9 +12,11 @@
 @interface MathProcessor : NSObject {
 	float currentTotal;
 	float modifierValue;
+	NSString* operationValue;
 }
 
 @property(readwrite) float currentTotal, modifierValue;
+@property(readwrite) NSString* operationValue;
 		
 - (float)applyOperation;	
 
