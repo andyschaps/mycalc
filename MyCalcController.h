@@ -16,11 +16,9 @@
 	MathProcessor *processor;
 }
 
+
 - (IBAction)ModifyCurrentWorkingValue:(id)sender;
 - (IBAction)RegisterCurrentOperation:(id)sender;
 - (IBAction)PerformOperation:(id)sender;
-//- (IBAction)WriteMemory:(id)sender;
-//- (IBAction)ReadMemory:(id)sender;
-//- (IBAction)ClearMemory:(id)sender;
 
 @end

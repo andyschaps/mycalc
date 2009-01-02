@@ -9,12 +9,20 @@
 #import "MathProcessor.h"
 
 @implementation MathProcessor
-@synthesize currentTotal, modifierValue;
-@synthesize operationValue;
+@synthesize currentTotal, modifierValue, operationValue;
 
-- (float)applyOperation {
-	self.currentTotal = self.currentTotal + self.modifierValue;
-	return self.currentTotal;
+- (id) init {
+    if (self = [super init]) {
+        currentTotal = [[NSDecimalNumber alloc] initWithInt:0];
+        modifierValue = [[NSDecimalNumber alloc] initWithInt:0];
+    }
+    return self;
+	
+}
+
+- (NSDecimalNumber*)applyOperation {
+	[currentTotal decimalNumberByAdding:modifierValue];
+	return currentTotal;
 }
 
 @end

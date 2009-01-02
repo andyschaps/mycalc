@@ -20,9 +20,14 @@
 
 - (IBAction) RegisterCurrentOperation: (id) sender {
 	NSButton* b = (NSButton*)sender;
-	NSString* operatorText = [b title]; 
+	NSString* operatorText = [b title];
+	//Operation* operation;
+	if ([operatorText isEqualToString:@"×"])
+	{
+		operatorText = @"*";
+	}
 	
-	[processor setOperationValue:operatorText];
+//	[processor setOperationValue:operatorText];
 	
 	[operatorField setStringValue:(NSString*)operatorText];	
 }
@@ -30,7 +35,7 @@
 - (IBAction) ModifyCurrentWorkingValue: (id) sender {
 	NSButton* b = (NSButton*)sender;
 	NSString* newChar = [b title]; 
-	float workingValue = [processor modifierValue];
+	NSDecimalNumber* workingValue = [processor modifierValue];
 	
 	if([newChar isEqualToString:@"C"])
 	{
@@ -41,13 +46,16 @@
 	}
 	else
 	{
-		NSNumber* *nm = [NSNumber numberWithFloat:[newChar floatValue]];
-		workingValue = (workingValue * 10) + [nm floatValue];
+		NSDecimalNumber* newNumber = [NSDecimalNumber decimalNumberWithString:newChar];
+		workingValue = [workingValue decimalNumberByMultiplyingByPowerOf10:(short)1];
+		workingValue = [workingValue decimalNumberByAdding:newNumber];
 	}
 			
 	[processor setModifierValue:workingValue];
 	
-	[displayField setFloatValue:workingValue];
+	[displayField setStringValue:[workingValue stringValue]];
 }
+
+
 	
 @end

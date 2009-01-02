@@ -8,16 +8,27 @@
 
 #import <Cocoa/Cocoa.h>
 
+typedef enum tagOperation	
+	{
+		NONE = 0,
+		Addition = 1,
+		Subtraction = 2,
+		Multiplication = 3,
+		Division = 4
+	} Operation;
+
 
 @interface MathProcessor : NSObject {
-	float currentTotal;
-	float modifierValue;
-	NSString* operationValue;
+	NSDecimalNumber* currentTotal;
+	NSDecimalNumber* modifierValue;
+	Operation* operationValue;
 }
 
-@property(readwrite) float currentTotal, modifierValue;
-@property(readwrite) NSString* operationValue;
+@property(readwrite) NSDecimalNumber* currentTotal;
+@property(readwrite) NSDecimalNumber* modifierValue;
+@property(readwrite) Operation* operationValue;
 		
-- (float)applyOperation;	
+- (NSDecimalNumber*)applyOperation;
+- (id) init;
 
 @end
