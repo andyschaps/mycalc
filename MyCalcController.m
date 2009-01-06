@@ -39,7 +39,7 @@
 	
 	if([newChar isEqualToString:@"C"])
 	{
-		workingValue = 0;
+		workingValue = [NSDecimalNumber decimalNumberWithString:@"0"];
 	}
 	else if([newChar isEqualToString:@"."])
 	{
