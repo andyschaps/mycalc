@@ -21,12 +21,16 @@ typedef enum tagOperation
 @interface MathProcessor : NSObject {
 	NSDecimalNumber* currentTotal;
 	NSDecimalNumber* modifierValue;
+	bool decimalPressed;
+	bool lastDigitWasZero;
 	Operation operationValue;
 }
 
 @property(readwrite, retain) NSDecimalNumber* currentTotal;
 @property(readwrite, retain) NSDecimalNumber* modifierValue;
 @property(readwrite) Operation operationValue;
+@property(readwrite) bool decimalPressed;
+@property(readwrite) bool lastDigitWasZero;
 		
 - (NSDecimalNumber*)applyOperation;
 - (id) init;

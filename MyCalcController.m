@@ -36,24 +36,66 @@
 	NSButton* b = (NSButton*)sender;
 	NSString* newChar = [b title]; 
 	NSDecimalNumber* workingValue = [processor modifierValue];
+	bool keyIsDecimal = false;
 	
 	if([newChar isEqualToString:@"C"])
 	{
 		workingValue = [NSDecimalNumber decimalNumberWithString:@"0"];
+		[processor setDecimalPressed:false];
+		[processor setLastDigitWasZero:false];
 	}
 	else if([newChar isEqualToString:@"."])
 	{
+		keyIsDecimal = true;
+		if (![processor decimalPressed])
+		{
+			[processor setDecimalPressed:true];
+		}
 	}
 	else
 	{
-		NSDecimalNumber* newNumber = [NSDecimalNumber decimalNumberWithString:newChar];
-		workingValue = [workingValue decimalNumberByMultiplyingByPowerOf10:(short)1];
-		workingValue = [workingValue decimalNumberByAdding:newNumber];
+		NSString* tempNumber = [workingValue stringValue];
+		if ([processor decimalPressed] && [tempNumber rangeOfString:@"."].location == NSNotFound)
+		{
+			tempNumber = [tempNumber stringByAppendingString:@"."];
+		}
+		if ([newChar isEqualToString:@"0"])
+		{
+			[processor setLastDigitWasZero:true];
+		}
+		else
+		{
+			if ([processor lastDigitWasZero])
+			{
+				tempNumber = [tempNumber stringByAppendingString:@"0"];
+				[processor setLastDigitWasZero:false];
+			}
+			tempNumber = [tempNumber stringByAppendingString:newChar];
+			workingValue = [NSDecimalNumber decimalNumberWithString:tempNumber];
+		}
 	}
 			
 	[processor setModifierValue:workingValue];
 	
-	[displayField setStringValue:[workingValue stringValue]];
+	if (keyIsDecimal)
+	{
+		[displayField setStringValue:[@"." stringByAppendingString:[workingValue stringValue]]];
+	}
+	else if ([processor lastDigitWasZero])
+	{
+		if ([processor decimalPressed] && [[workingValue stringValue] rangeOfString:@"."].location == NSNotFound)
+		{
+			[displayField setStringValue:[[workingValue stringValue] stringByAppendingString:@".0"]];
+		}
+		else
+		{
+			[displayField setStringValue:[[workingValue stringValue] stringByAppendingString:@"0"]];
+		}
+	}
+	else
+	{
+		[displayField setStringValue:[workingValue stringValue]];
+	}
 }
 
 

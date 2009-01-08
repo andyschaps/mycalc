@@ -9,7 +9,7 @@
 #import "MathProcessor.h"
 
 @implementation MathProcessor
-@synthesize currentTotal, modifierValue, operationValue;
+@synthesize currentTotal, modifierValue, operationValue, decimalPressed, lastDigitWasZero;
 
 - (id) init {
     if (self = [super init]) {
