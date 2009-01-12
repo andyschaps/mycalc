@@ -17,6 +17,9 @@
 }
 
 
+- (void)HandleDecimalPressed;
+- (IBAction)Clear:(id)sender;
+- (IBAction)ToggleSign:(id)sender;
 - (IBAction)ModifyCurrentWorkingValue:(id)sender;
 - (IBAction)RegisterCurrentOperation:(id)sender;
 - (IBAction)PerformOperation:(id)sender;

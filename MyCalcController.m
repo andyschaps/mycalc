@@ -21,15 +21,35 @@
 - (IBAction) RegisterCurrentOperation: (id) sender {
 	NSButton* b = (NSButton*)sender;
 	NSString* operatorText = [b title];
-	//Operation* operation;
+	//Operation operation;
 	if ([operatorText isEqualToString:@"×"])
 	{
 		operatorText = @"*";
 	}
 	
-//	[processor setOperationValue:operatorText];
+	//[processor setOperationValue:operatorText];
 	
 	[operatorField setStringValue:(NSString*)operatorText];	
+}
+
+- (IBAction) Clear: (id) sender  {
+	[processor setModifierValue:[NSDecimalNumber decimalNumberWithString:@"0"]];
+	[processor setDecimalPressed:false];
+	[processor setLastDigitWasZero:false];
+	[displayField setStringValue:[[processor modifierValue] stringValue]];
+	[operatorField setStringValue:@""];
+}
+
+- (IBAction) ToggleSign: (id) sender {
+	[processor setModifierValue:[[processor modifierValue] decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"-1"]]];
+	[displayField setStringValue:[[processor modifierValue] stringValue]];
+}
+
+- (void) HandleDecimalPress {
+	if (![processor decimalPressed])
+	{
+		[processor setDecimalPressed:true];
+	}
 }
 
 - (IBAction) ModifyCurrentWorkingValue: (id) sender {
@@ -37,20 +57,11 @@
 	NSString* newChar = [b title]; 
 	NSDecimalNumber* workingValue = [processor modifierValue];
 	bool keyIsDecimal = false;
-	
-	if([newChar isEqualToString:@"C"])
-	{
-		workingValue = [NSDecimalNumber decimalNumberWithString:@"0"];
-		[processor setDecimalPressed:false];
-		[processor setLastDigitWasZero:false];
-	}
-	else if([newChar isEqualToString:@"."])
+
+	if([newChar isEqualToString:@"."])
 	{
 		keyIsDecimal = true;
-		if (![processor decimalPressed])
-		{
-			[processor setDecimalPressed:true];
-		}
+		[self HandleDecimalPress];
 	}
 	else
 	{

@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="367"/>
+			<integer value="368"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1265,7 +1265,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<object class="NSTextField" id="533527110">
 											<reference key="NSNextResponder" ref="632782422"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{14, 13}, {193, 29}}</string>
+											<string key="NSFrame">{{14, 35}, {193, 24}}</string>
 											<reference key="NSSuperview" ref="632782422"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTextFieldCell" key="NSCell" id="117928770">
@@ -1274,7 +1274,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 												<string key="NSContents">0</string>
 												<object class="NSFont" key="NSSupport">
 													<string key="NSName">LucidaGrande</string>
-													<double key="NSSize">2.400000e+01</double>
+													<double key="NSSize">2.000000e+01</double>
 													<int key="NSfFlags">16</int>
 												</object>
 												<reference key="NSControlView" ref="533527110"/>
@@ -1303,17 +1303,17 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 										<object class="NSTextField" id="554955990">
 											<reference key="NSNextResponder" ref="632782422"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{123, 3}, {20, 14}}</string>
+											<string key="NSFrame">{{128, 3}, {20, 18}}</string>
 											<reference key="NSSuperview" ref="632782422"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTextFieldCell" key="NSCell" id="545627980">
 												<int key="NSCellFlags">-2079195584</int>
 												<int key="NSCellFlags2">138560512</int>
 												<string key="NSContents"/>
-												<object class="NSFont" key="NSSupport" id="26">
+												<object class="NSFont" key="NSSupport">
 													<string key="NSName">LucidaGrande</string>
-													<double key="NSSize">1.100000e+01</double>
-													<int key="NSfFlags">3100</int>
+													<double key="NSSize">1.400000e+01</double>
+													<int key="NSfFlags">16</int>
 												</object>
 												<reference key="NSControlView" ref="554955990"/>
 												<bool key="NSDrawsBackground">YES</bool>
@@ -1334,7 +1334,11 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents"/>
-								<reference key="NSSupport" ref="26"/>
+								<object class="NSFont" key="NSSupport">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">1.100000e+01</double>
+									<int key="NSfFlags">3100</int>
+								</object>
 								<reference key="NSBackgroundColor" ref="697998700"/>
 								<object class="NSColor" key="NSTextColor">
 									<int key="NSColorSpace">3</int>
@@ -1621,14 +1625,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<object class="IBActionConnection" key="connection">
 						<string key="label">ModifyCurrentWorkingValue:</string>
 						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="731326102"/>
-					</object>
-					<int key="connectionID">627</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
 						<reference key="destination" ref="740012528"/>
 					</object>
 					<int key="connectionID">628</int>
@@ -1715,14 +1711,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="949831691"/>
-					</object>
-					<int key="connectionID">639</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">RegisterCurrentOperation:</string>
 						<reference key="source" ref="604564293"/>
 						<reference key="destination" ref="59470571"/>
@@ -1768,6 +1756,22 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<reference key="destination" ref="554955990"/>
 					</object>
 					<int key="connectionID">650</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">Clear:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="731326102"/>
+					</object>
+					<int key="connectionID">652</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">ToggleSign:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="949831691"/>
+					</object>
+					<int key="connectionID">654</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2047,13 +2051,13 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="75927731"/>
 							<reference ref="78876487"/>
 							<reference ref="740012528"/>
-							<reference ref="731326102"/>
 							<reference ref="358925257"/>
 							<reference ref="404071144"/>
 							<reference ref="267446455"/>
-							<reference ref="949831691"/>
 							<reference ref="1002353515"/>
 							<reference ref="809640200"/>
+							<reference ref="949831691"/>
+							<reference ref="731326102"/>
 						</object>
 						<reference key="parent" ref="513744381"/>
 					</object>
@@ -2493,6 +2497,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="446956599"/>
 						</object>
 						<reference key="parent" ref="414427165"/>
+						<string key="objectName">clearButton</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">532</int>
@@ -2742,8 +2747,8 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<reference key="object" ref="1002353515"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="533527110"/>
 							<reference ref="554955990"/>
+							<reference ref="533527110"/>
 						</object>
 						<reference key="parent" ref="414427165"/>
 					</object>
@@ -3056,8 +3061,8 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{475, 832}, {234, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{490, 297}, {268, 324}}</string>
-					<string>{{490, 297}, {268, 324}}</string>
+					<string>{{510, 223}, {268, 324}}</string>
+					<string>{{510, 223}, {268, 324}}</string>
 					<reference ref="9"/>
 					<string>{{11, 666}, {480, 270}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3213,7 +3218,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">650</int>
+			<int key="maxID">654</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3225,12 +3230,16 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>Clear:</string>
 							<string>ModifyCurrentWorkingValue:</string>
 							<string>PerformOperation:</string>
 							<string>RegisterCurrentOperation:</string>
+							<string>ToggleSign:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
