@@ -10,105 +10,98 @@
 
 @implementation MyCalcController
 
--(void)awakeFromNib {
-	processor = [[MathProcessor alloc]init];
+-(void)awakeFromNib
+{
+	[self clear:self];
 }
 
--(IBAction)PerformOperation:(id)sender {
-	
+-(void)dealloc
+{
+	[displayedValue release];
+	[enteredValue release];
+	[super dealloc];
 }
 
-- (IBAction) RegisterCurrentOperation: (id) sender {
+-(void)clear:(id)sender
+{
+	[displayedValue autorelease];
+	displayedValue = [[NSDecimalNumber zero] retain];
+	[enteredValue autorelease];
+	enteredValue = [[NSDecimalNumber zero] retain];
+	lastOperation = None;
+	usedDecimalPoint = NO;
+	[displayField setStringValue:[displayedValue stringValue]];
+}
+
+-(void)operation:(id)sender
+{
 	NSButton* b = (NSButton*)sender;
 	NSString* operatorText = [b title];
-	//Operation operation;
 	if ([operatorText isEqualToString:@"×"])
 	{
 		operatorText = @"*";
 	}
-	
-	//[processor setOperationValue:operatorText];
-	
 	[operatorField setStringValue:(NSString*)operatorText];	
+	
+	lastOperation = [sender tag];
 }
 
-- (IBAction) Clear: (id) sender  {
-	[processor setModifierValue:[NSDecimalNumber decimalNumberWithString:@"0"]];
-	[processor setDecimalPressed:false];
-	[processor setLastDigitWasZero:false];
-	[displayField setStringValue:[[processor modifierValue] stringValue]];
-	[operatorField setStringValue:@""];
+-(void)equals:(id)sender
+{
+	
 }
 
-- (IBAction) ToggleSign: (id) sender {
-	[processor setModifierValue:[[processor modifierValue] decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"-1"]]];
-	[displayField setStringValue:[[processor modifierValue] stringValue]];
-}
-
-- (void) HandleDecimalPress {
-	if (![processor decimalPressed])
+-(void)insertDigit:(id)sender
+{
+	NSString* oldValue;
+	oldValue = [displayField stringValue];
+	if ([oldValue isEqualToString:@"0"])
 	{
-		[processor setDecimalPressed:true];
-	}
-}
-
-- (IBAction) ModifyCurrentWorkingValue: (id) sender {
-	NSButton* b = (NSButton*)sender;
-	NSString* newChar = [b title]; 
-	NSDecimalNumber* workingValue = [processor modifierValue];
-	bool keyIsDecimal = false;
-
-	if([newChar isEqualToString:@"."])
-	{
-		keyIsDecimal = true;
-		[self HandleDecimalPress];
+		[displayField setStringValue:[sender title]];
 	}
 	else
 	{
-		NSString* tempNumber = [workingValue stringValue];
-		if ([processor decimalPressed] && [tempNumber rangeOfString:@"."].location == NSNotFound)
-		{
-			tempNumber = [tempNumber stringByAppendingString:@"."];
-		}
-		if ([newChar isEqualToString:@"0"])
-		{
-			[processor setLastDigitWasZero:true];
-		}
-		else
-		{
-			if ([processor lastDigitWasZero])
-			{
-				tempNumber = [tempNumber stringByAppendingString:@"0"];
-				[processor setLastDigitWasZero:false];
-			}
-			tempNumber = [tempNumber stringByAppendingString:newChar];
-			workingValue = [NSDecimalNumber decimalNumberWithString:tempNumber];
-		}
-	}
-			
-	[processor setModifierValue:workingValue];
-	
-	if (keyIsDecimal)
-	{
-		[displayField setStringValue:[@"." stringByAppendingString:[workingValue stringValue]]];
-	}
-	else if ([processor lastDigitWasZero])
-	{
-		if ([processor decimalPressed] && [[workingValue stringValue] rangeOfString:@"."].location == NSNotFound)
-		{
-			[displayField setStringValue:[[workingValue stringValue] stringByAppendingString:@".0"]];
-		}
-		else
-		{
-			[displayField setStringValue:[[workingValue stringValue] stringByAppendingString:@"0"]];
-		}
-	}
-	else
-	{
-		[displayField setStringValue:[workingValue stringValue]];
+		[displayField setStringValue: [oldValue stringByAppendingString: [sender title]]];
 	}
 }
 
-
+-(void)decimalPoint:(id)sender
+{
+	NSString* oldValue;
 	
+    if (!usedDecimalPoint)
+	{
+        usedDecimalPoint = YES;
+        if ([displayField stringValue] == @"0")
+		{
+            [displayField setStringValue: @"0."];
+		}
+        else
+		{
+            oldValue = [displayField stringValue];
+			NSString* newValue = [oldValue stringByAppendingString:@"."];
+            [displayField setStringValue:newValue];
+		}
+	}
+}
+
+-(void)toggleSign:(id)sender
+{
+	NSString* oldValue;
+	oldValue = [displayField stringValue];
+	if ([oldValue rangeOfString:@"-"].location == NSNotFound)
+	{
+		[displayField setStringValue: [@"-" stringByAppendingString:oldValue]];
+	}
+	else
+	{
+		[displayField setStringValue: [oldValue substringFromIndex:1]];
+	}
+}
+
+-(void)calculate
+{
+	
+}
+
 @end

@@ -7,21 +7,36 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MathProcessor.h"
+
+enum Operation {
+	None,
+	Add,
+	Subtract,
+	Multiply,
+	Divide
+};
 
 @interface MyCalcController : NSObject {
 	IBOutlet NSTextField *displayField;
 	IBOutlet NSTextField *operatorField;
-	
-	MathProcessor *processor;
+	//MathProcessor *processor;
+
+	BOOL usedDecimalPoint;
+	NSDecimalNumber* displayedValue;
+	NSDecimalNumber* enteredValue;
+	SEL nextOperation;
+	int lastOperation;
 }
 
-
-- (void)HandleDecimalPressed;
-- (IBAction)Clear:(id)sender;
-- (IBAction)ToggleSign:(id)sender;
-- (IBAction)ModifyCurrentWorkingValue:(id)sender;
-- (IBAction)RegisterCurrentOperation:(id)sender;
-- (IBAction)PerformOperation:(id)sender;
+-(void)clear:(id)sender;
+-(void)operation:(id)sender;
+-(void)equals:(id)sender;
+-(void)insertDigit:(id)sender;
+-(void)decimalPoint:(id)sender;
+-(void)toggleSign:(id)sender;
+-(void)calculate;
+		
+-(void)awakeFromNib;
+-(void)dealloc;
 
 @end

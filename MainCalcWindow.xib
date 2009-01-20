@@ -915,6 +915,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{137, 167}, {53, 31}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
+							<int key="NSTag">4</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="763782535">
 								<int key="NSCellFlags">-2080244224</int>
@@ -935,6 +936,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{196, 167}, {53, 31}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
+							<int key="NSTag">3</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="261166790">
 								<int key="NSCellFlags">-2080244224</int>
@@ -1015,6 +1017,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{196, 130}, {53, 31}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
+							<int key="NSTag">2</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="322402599">
 								<int key="NSCellFlags">-2080244224</int>
@@ -1095,6 +1098,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{196, 93}, {53, 31}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
+							<int key="NSTag">1</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="505370976">
 								<int key="NSCellFlags">-2080244224</int>
@@ -1622,134 +1626,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<int key="connectionID">626</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="740012528"/>
-					</object>
-					<int key="connectionID">628</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="560673084"/>
-					</object>
-					<int key="connectionID">629</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="44228121"/>
-					</object>
-					<int key="connectionID">630</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="338466156"/>
-					</object>
-					<int key="connectionID">631</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="358925257"/>
-					</object>
-					<int key="connectionID">632</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="864232287"/>
-					</object>
-					<int key="connectionID">633</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="404071144"/>
-					</object>
-					<int key="connectionID">634</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="837675405"/>
-					</object>
-					<int key="connectionID">635</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="267446455"/>
-					</object>
-					<int key="connectionID">636</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="219992946"/>
-					</object>
-					<int key="connectionID">637</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">ModifyCurrentWorkingValue:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="755389008"/>
-					</object>
-					<int key="connectionID">638</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">RegisterCurrentOperation:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="59470571"/>
-					</object>
-					<int key="connectionID">640</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">RegisterCurrentOperation:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="75927731"/>
-					</object>
-					<int key="connectionID">641</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">RegisterCurrentOperation:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="809640200"/>
-					</object>
-					<int key="connectionID">642</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">RegisterCurrentOperation:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="78876487"/>
-					</object>
-					<int key="connectionID">643</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">PerformOperation:</string>
-						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="560085867"/>
-					</object>
-					<int key="connectionID">644</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">operatorField</string>
 						<reference key="source" ref="604564293"/>
@@ -1759,19 +1635,147 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">Clear:</string>
+						<string key="label">insertDigit:</string>
 						<reference key="source" ref="604564293"/>
-						<reference key="destination" ref="731326102"/>
+						<reference key="destination" ref="219992946"/>
 					</object>
-					<int key="connectionID">652</int>
+					<int key="connectionID">655</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">ToggleSign:</string>
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="404071144"/>
+					</object>
+					<int key="connectionID">656</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="837675405"/>
+					</object>
+					<int key="connectionID">657</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="267446455"/>
+					</object>
+					<int key="connectionID">658</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="338466156"/>
+					</object>
+					<int key="connectionID">659</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="358925257"/>
+					</object>
+					<int key="connectionID">660</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="864232287"/>
+					</object>
+					<int key="connectionID">661</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="740012528"/>
+					</object>
+					<int key="connectionID">662</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="560673084"/>
+					</object>
+					<int key="connectionID">663</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertDigit:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="44228121"/>
+					</object>
+					<int key="connectionID">664</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">decimalPoint:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="755389008"/>
+					</object>
+					<int key="connectionID">667</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">operation:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="59470571"/>
+					</object>
+					<int key="connectionID">668</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">operation:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="75927731"/>
+					</object>
+					<int key="connectionID">669</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">operation:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="809640200"/>
+					</object>
+					<int key="connectionID">670</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">operation:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="78876487"/>
+					</object>
+					<int key="connectionID">671</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">equals:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="560085867"/>
+					</object>
+					<int key="connectionID">672</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">toggleSign:</string>
 						<reference key="source" ref="604564293"/>
 						<reference key="destination" ref="949831691"/>
 					</object>
-					<int key="connectionID">654</int>
+					<int key="connectionID">675</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">clear:</string>
+						<reference key="source" ref="604564293"/>
+						<reference key="destination" ref="731326102"/>
+					</object>
+					<int key="connectionID">676</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2048,8 +2052,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="864232287"/>
 							<reference ref="837675405"/>
 							<reference ref="59470571"/>
-							<reference ref="75927731"/>
-							<reference ref="78876487"/>
 							<reference ref="740012528"/>
 							<reference ref="358925257"/>
 							<reference ref="404071144"/>
@@ -2058,6 +2060,8 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="809640200"/>
 							<reference ref="949831691"/>
 							<reference ref="731326102"/>
+							<reference ref="75927731"/>
+							<reference ref="78876487"/>
 						</object>
 						<reference key="parent" ref="513744381"/>
 					</object>
@@ -3218,7 +3222,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">654</int>
+			<int key="maxID">676</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3230,14 +3234,16 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>Clear:</string>
-							<string>ModifyCurrentWorkingValue:</string>
-							<string>PerformOperation:</string>
-							<string>RegisterCurrentOperation:</string>
-							<string>ToggleSign:</string>
+							<string>clear:</string>
+							<string>decimalPoint:</string>
+							<string>equals:</string>
+							<string>insertDigit:</string>
+							<string>operation:</string>
+							<string>toggleSign:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
