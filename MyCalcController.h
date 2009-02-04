@@ -19,9 +19,9 @@ enum Operation {
 @interface MyCalcController : NSObject {
 	IBOutlet NSTextField *displayField;
 	IBOutlet NSTextField *operatorField;
-	//MathProcessor *processor;
-
+	
 	BOOL usedDecimalPoint;
+	BOOL enteringNumber;
 	NSDecimalNumber* displayedValue;
 	NSDecimalNumber* enteredValue;
 	SEL nextOperation;
@@ -34,8 +34,9 @@ enum Operation {
 -(void)insertDigit:(id)sender;
 -(void)decimalPoint:(id)sender;
 -(void)toggleSign:(id)sender;
--(void)calculate;
-		
+-(void)beginEditingNumber;
+-(void)endEditingNumber;
+-(void)performLastOperation;
 -(void)awakeFromNib;
 -(void)dealloc;
 
