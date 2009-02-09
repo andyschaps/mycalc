@@ -885,7 +885,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string type="base64-UTF8" key="NSKeyEquivalent">Gw</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -926,7 +926,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">/</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -947,7 +947,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">*</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -967,7 +967,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">7</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -987,7 +987,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">8</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -997,6 +997,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{137, 130}, {53, 31}}</string>
 							<reference key="NSSuperview" ref="414427165"/>
+							<int key="NSTag">9</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="154252469">
 								<int key="NSCellFlags">-2080244224</int>
@@ -1007,7 +1008,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">9</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1028,7 +1029,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">-</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1048,7 +1049,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">4</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1068,7 +1069,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">5</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1088,7 +1089,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">6</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1109,7 +1110,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">+</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1129,7 +1130,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">1</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1149,7 +1150,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">2</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1169,7 +1170,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">3</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1189,7 +1190,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">0</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1209,7 +1210,7 @@
 								<int key="NSButtonFlags">-2033434369</int>
 								<int key="NSButtonFlags2">160</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">.</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1251,7 +1252,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 									</object>
 								</object>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string type="base64-UTF8" key="NSKeyEquivalent">DQ</string>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
 							</object>
@@ -1775,7 +1776,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<reference key="source" ref="604564293"/>
 						<reference key="destination" ref="560085867"/>
 					</object>
-					<int key="connectionID">677</int>
+					<int key="connectionID">678</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2048,20 +2049,20 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="338466156"/>
 							<reference ref="230646170"/>
 							<reference ref="44228121"/>
-							<reference ref="560673084"/>
 							<reference ref="864232287"/>
 							<reference ref="837675405"/>
 							<reference ref="59470571"/>
 							<reference ref="740012528"/>
-							<reference ref="358925257"/>
-							<reference ref="404071144"/>
-							<reference ref="267446455"/>
 							<reference ref="1002353515"/>
 							<reference ref="809640200"/>
 							<reference ref="949831691"/>
-							<reference ref="731326102"/>
 							<reference ref="75927731"/>
 							<reference ref="78876487"/>
+							<reference ref="560673084"/>
+							<reference ref="358925257"/>
+							<reference ref="267446455"/>
+							<reference ref="404071144"/>
+							<reference ref="731326102"/>
 						</object>
 						<reference key="parent" ref="513744381"/>
 					</object>
@@ -3222,7 +3223,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">677</int>
+			<int key="maxID">678</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

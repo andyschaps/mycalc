@@ -9,11 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 enum Operation {
-	None,
-	Add,
-	Subtract,
-	Multiply,
-	Divide
+	None = 0,
+	Add = 1,
+	Subtract = 2,
+	Multiply = 3,
+	Divide = 4
 };
 
 @interface MyCalcController : NSObject {

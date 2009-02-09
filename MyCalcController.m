@@ -36,8 +36,8 @@
 }
 
 - (void) setLastOperation: (id) sender  {
-	lastOperation = [sender tag];
 	NSButton* b = (NSButton*)sender;
+	lastOperation = [b tag];
 	NSString* operatorText = [b title];
 	if ([operatorText isEqualToString:@"×"])
 	{
